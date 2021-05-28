@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+  <html lang  = "en">
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv  = "X-UA-Compatible" content = "IE=edge">
+    <meta name  = "viewport" content  = "width=device-width, initial-scale=1">
+    <link rel   = "icon" href = "./fav.ico" >
+    <link rel   = "stylesheet" type = "text/css" href = "index.css">
+    <link rel   = "stylesheet" type = "text/css" href = "auth.css">
+    <link href  = "https://fonts.googleapis.com/css?family=Roboto:400,700" rel = "stylesheet">
+    <title> Acorn </title>
+  </head>
+
+  <body>
+    <nav role="navigation" class="primary-navigation">
+      <a href="index.html">Home Page</a>
+      <a href="post.html">Post</a>
+      <a href="logout.html" class="right" id="out">Sign out</a>
+      <a href="login.html" class="right" id="in1">Sign in</a>
+      <a href="signup.html" class="right" id="in2">Sign up</a>
+    </nav>
+
+    <script type = "text/javascript" src = "login.js"></script>
+    <div class="form">
+      <div id="login"> 
+        <h1>Sign in to Acorn</h1>
+        <form onsubmit="return false" id="form">
+          <div class="field-wrap"> 
+            <input type="email" id="email" placeholder = "Email Address" required = "required">
+          </div>
+          
+          <div class="field-wrap"> 
+            <input type="password" id="password" placeholder = "Password" required = "required">
+          </div>
+
+          <button type="submit" class="button button-block">Log In</button>
+        </form>
+      <div class="hint">Doesn't have an account? <a href = "signup.html">Sign up here</a></div>
+      </div>
+    </div> <!-- /lform -->
+    <noscript>
+      <strong>
+        We're sorry but this site doesn't work properly without 
+        JavaScript enabled. Please enable it to continue.
+      </strong>
+    </noscript>
+  </body>
+</html>
